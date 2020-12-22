@@ -1,10 +1,13 @@
-			body {color:000;background-color:#ccc;font-family:sans-serif,Helvetica,Arial;padding:0;margin:0;font-size:105%}
+			body {color:000;background-color:#e0e0e0;font-family:sans-serif,Helvetica,Arial;padding:0;margin:0;}
 			/* a:link {color:#20207f;text-decoration:none} */
-			a:link {color:#212529;text-decoration:none}
-			a:hover {color:#20207f;text-decoration:underline}
-			a:active {color:#20207f;text-decoration:none}
+            a:link {color:#212529;text-decoration:none}
+            a {
+                color: #212529;
+            }
+			a:hover {color:#ff0f0f;text-decoration:none}
+			a:active {color:#ff0f0f;text-decoration:none}
 			/* a:visited {color:#20207f;text-decoration:none} */
-			a:visited {color:#212529;text-decoration:none}
+			/* a:visited {color:#212529;text-decoration:none} */
 			a.clearnet:link {color:#666666;text-decoration:none}
 			a.clearnet:hover {color:#666666;text-decoration:underline}
 			a.clearnet:active {color:#666666;text-decoration:none}
@@ -33,7 +36,7 @@
 			ul {list-style-type:none;}			
 			ul ul {background-color:#f2f2f2;border-bottom:1px solid #999;border-left:1px solid #999;border-right:1px solid #999;font-size:0.8em;line-height:22px;padding-bottom:2px;padding-top:2px;}
 			
-			li {margin-left:-28px;margin-right:5px}
+			li {margin-left:-24px;margin-right:5px}
 			.nav-item {
 				margin-left: auto;
 				margin-right: auto;
@@ -139,10 +142,27 @@
             -webkit-appearance: none;
             margin: 0;
             }
-
             /* Firefox */
             input[type=number] {
             -moz-appearance: textfield;
+            }
+
+            #statsdiv {
+                z-index: -10;
+                position: sticky;
+                top: 170px;
+            }
+
+            .grecaptcha-badge {
+                display: none;
+            }
+
+            #recaptchawarning {
+                font-size: small;
+            }
+
+            #mainpagemainframe {
+                font-size: 105%;
             }
 
 
@@ -361,6 +381,4 @@
             a[href*="github.com/"] {
 				background:url(../icons/github.png) no-repeat left center;
 				padding-left:19px;
-			}
-            
-
+            }
