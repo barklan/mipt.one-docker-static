@@ -1,8 +1,8 @@
 			body {color:000;background-color:#e0e0e0;font-family:sans-serif,Helvetica,Arial;padding:0;margin:0;}
 			/* a:link {color:#20207f;text-decoration:none} */
-            a:link {color:#212529;text-decoration:none}
+            a:link {color:DarkBlue;text-decoration:none}
             a {
-                color: #212529;
+                color: DarkBlue;
             }
 			a:hover {color:#ff0f0f;text-decoration:none}
 			a:active {color:#ff0f0f;text-decoration:none}
@@ -147,10 +147,21 @@
             -moz-appearance: textfield;
             }
 
+            #physsearchdiv {
+                position: sticky;
+                top: 78px;
+            }
+
             #statsdiv {
                 z-index: -10;
                 position: sticky;
-                top: 170px;
+                top: 190px;
+            }
+
+            #physinfodiv {
+                position: sticky;
+                top: 395px;
+                /* margin-top: 30px; */
             }
 
             .grecaptcha-badge {
@@ -380,5 +391,10 @@
             
             a[href*="github.com/"] {
 				background:url(../icons/github.png) no-repeat left center;
+				padding-left:19px;
+            }
+
+            a[href*="t.me/"] {
+				background:url(../icons/telegram.png) no-repeat left center;
 				padding-left:19px;
             }
