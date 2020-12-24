@@ -176,6 +176,15 @@
                 font-size: 105%;
             }
 
+            #allyouneed {
+                font-size: 110%;
+            }
+
+
+			a[href*="mipt.one/"] {
+				/* background:url(../icons/vk.png) no-repeat left center; */
+				padding-left:19px;
+			}
 
 			a[href*="vk.com/"] {
 				background:url(../icons/vk.png) no-repeat left center;
