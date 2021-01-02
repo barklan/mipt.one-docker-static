@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Strobe Light | Fast</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<style>
+html * {font-family: Arial; margin: 0px; 
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-color:black;}
+</style>
+<script>
+var x;
+
+function changecolors() {
+    x = 1;
+    setInterval(change, 75);
+}
+
+function change() {
+    if (x === 1) {
+        color = "black";
+        x = 2;
+    } else {
+        color = "white";
+        x = 1;
+    }
+
+    document.body.style.backgroundColor = color;
+}
+changecolors();
+</script>
+</head>
+<body>
+</body>
+</html>
