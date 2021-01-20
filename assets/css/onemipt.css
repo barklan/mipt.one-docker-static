@@ -4,9 +4,9 @@
             a {
                 color: DarkBlue;
             }
-			a:hover {color:#ff0f0f;text-decoration:none}
-			a:active {color:#ff0f0f;text-decoration:none}
-			/* a:visited {color:#20207f;text-decoration:none} */
+			/* a:hover {color:#ff0f0f;text-decoration:none}
+			a:active {color:#ff0f0f;text-decoration:none} */
+			a:visited {color: darkblue;text-decoration:none}
 			/* a:visited {color:#212529;text-decoration:none} */
 			a.clearnet:link {color:#666666;text-decoration:none}
 			a.clearnet:hover {color:#666666;text-decoration:underline}
@@ -50,7 +50,44 @@
 			span.heartsl {color:#ff80bf;font-size:0.9em;cursor:help}
 			#javawarn {z-index:1;position:relative;width:100%;height:auto;background-color:#bf3030;color:#f2f2f2;font-size:0.7em;text-align:center;font-weight:bold;padding:3px 0}
 			#javaok {z-index:0;position:relative;width:100%;height:auto;background-color:#bf3030;color:#f2f2f2;font-size:0.7em;text-align:center;font-weight:bold;padding:3px 0}
-			boy {color:#0000ff}
+            boy {color:#0000ff}
+            
+
+            a:not(.nav-link, .navbar-brand) {
+                text-decoration: none;
+            }
+
+            .navbar-brand {
+                padding-left:5px !important;
+            }
+
+            a:not(.nav-link) {
+                padding-left:19px;
+            }
+            
+            a:hover {
+            text-decoration: none;
+            }
+            
+            a {
+            text-decoration: none;
+            position: relative;
+            }
+
+            a:not(.nav-link, .navbar-brand):after {
+                border-radius: 1em;
+                border-top: .15em solid darkblue;
+                content: "";
+                position: absolute;
+                  right: 100%;
+                  bottom: 0em;
+                  left: 1.2em;
+                transition: right .3s cubic-bezier(0,.5,0,1);
+              }
+              
+            a:hover:after {
+            right: 0;
+            }
 			
 
 			div #mainrows {
@@ -180,11 +217,6 @@
                 font-size: 110%;
             }
 
-            #phystermsapply {
-                font-size: 90%;
-            }
-
-
 
             /* This is for resistors */
             .resistorscontainer {
@@ -238,229 +270,187 @@
                 width: 25px;
             }
 
-			a[href*="mipt.one/"] {
-				/* background:url(../icons/vk.png) no-repeat left center; */
-				padding-left:19px;
+			/* a[href*="mipt.one/"]:not(.nav-link, .navbar-brand) {
+				background:url(../icons/mainicon.png) no-repeat left center;
+            } */
+            
+            a[href*="mipt.one/"]:not(.nav-link):not(.navbar-brand) {
+				background:url(../icons/mainicon.png) no-repeat left center;
 			}
 
 			a[href*="vk.com/"] {
 				background:url(../icons/vk.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="drive.google.com/"] {
 				background:url(../icons/drive.ico) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="mipt.ru/"] {
 				background:url(../icons/mipt.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="moodle.phystech.edu"] {
 				background:url(../icons/moodle.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="translate.google.com"] {
 				background:url(../icons/translate.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="lib.mipt.ru"] {
 				background:url(../icons/libmipt.ico) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="text.ru"] {
 				background:url(../icons/textru.ico) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="ranepa.ru"] {
 				background:url(../icons/ranepa.ico) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="mipt1.ru"] {
 				background:url(../icons/mipt1.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="chrome.google.com/webstore/detail/moodle-breaker/"] {
 				background:url(../icons/moodlebreaker.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="docs.google.com/document/"] {
 				background:url(../icons/docs.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="docs.google.com/spreadsheets/"] {
 				background:url(../icons/sheets.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="docs.google.com/presentation/"] {
 				background:url(../icons/slides.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="docs.google.com/forms/"] {
 				background:url(../icons/forms.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="wolframalpha.com"] {
 				background:url(../icons/wolfram.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="printbox.io"] {
 				background:url(../icons/printbox.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="pixlr.com/e/"] {
 				background:url(../icons/pixlre.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="pixlr.com/x/"] {
 				background:url(../icons/pixlrx.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="pixlr.com/e/"] {
 				background:url(../icons/pixlre.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			#bloglink {
 				background:url(../icons/blog.png) no-repeat left center;
-				padding-left:19px;
 			}
 			
 			a[href*="b-ok.cc/"] {
 				background:url(../icons/zlib.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="wikimipt.org/"] {
 				background:url(../icons/wikimipt.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="symbolab.com/"] {
 				background:url(../icons/symbolab.ico) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="desmos.com/"] {
 				background:url(../icons/desmos.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="mipt-telecom.ru/"] {
 				background:url(../icons/telecom.ico) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="google.com/maps/"] {
 				background:url(../icons/gmaps.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="yandex.com/maps/"] {
 				background:url(../icons/yamaps.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="veryfood.ru/"] {
 				background:url(../icons/default3.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="caltech.edu/"] {
 				background:url(../icons/caltech.ico) no-repeat left center;
-				padding-left:19px;
 			}
 			
 			a[href*="flibustahezeous3.onion/"] {
 				background:url(../icons/flibusta.png) no-repeat left center;
-				padding-left:19px;
 			}
 			a[href*="rutracker.org/"] {
 				background:url(../icons/rutracker.png) no-repeat left center;
-				padding-left:19px;
 			}
 			a[href*="torproject.org/"] {
 				background:url(../icons/tor.png) no-repeat left center;
-				padding-left:19px;
 			}
 			a[href*="repl.it/"] {
 				background:url(../icons/repl.png) no-repeat left center;
-				padding-left:19px;
 			}
 			
 			a[href*="solidfiles.com/"] {
 				background:url(../icons/default3.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="ru-board.com/"] {
 				background:url(../icons/default3.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="twirpx.com/"] {
 				background:url(../icons/twirpx.ico) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="utorrent.com/"] {
 				background:url(../icons/utorrent.ico) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="miptstream.ru/"] {
 				background:url(../icons/miptstream.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="palqa.ru/"] {
 				background:url(../icons/palqa.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="lectoriy.ru/"] {
 				background:url(../icons/lektoriy.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="mipt.one/impress/"] {
 				background:url(../icons/mainicon.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="mipt.one/images/miptmap.png"] {
 				background:url(../icons/pin.png) no-repeat left center;
-				padding-left:19px;
 			}
 
 			a[href*="buy.mipt.cc/"] {
 				background:url(../icons/buymipt.png) no-repeat left center;
-				padding-left:19px;
             }
             
             a[href*="github.com/"] {
 				background:url(../icons/github.png) no-repeat left center;
-				padding-left:19px;
             }
 
             a[href*="t.me/"] {
 				background:url(../icons/telegram.png) no-repeat left center;
-				padding-left:19px;
             }

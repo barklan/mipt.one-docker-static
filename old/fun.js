@@ -256,7 +256,7 @@
 				// create textured materials for each cube's faces
 				geometry = new THREE.BoxGeometry( 20, 20, 20 );
 				textureCube = THREE.ImageUtils.loadTexture('img/squarey_side.png');
-				textureFace = THREE.ImageUtils.loadTexture('img/squarey_happy.png');
+				textureFace = THREE.ImageUtils.loadTexture('img/miptone.png');
 				textureBack = THREE.ImageUtils.loadTexture('img/squarey_sad.png');
 
 				// render textures at lowest quality
